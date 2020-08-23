@@ -9,7 +9,6 @@
 #include <stack>
 #include <queue>
 #include <cstdlib>
-#include <unordered_map>
 
 #define rep(i, n) for (int i = 0; i < n; ++i)
 #define repr(e, i) for (auto e: i)
@@ -49,7 +48,7 @@ int main() {
         l = l / n;
         sort(all(points), cmp);
         // 这个地方如果用l*2做会有精度问题，导致wa
-        int l2 = points[0].first + points[n-1].first;
+        int l2 = points[0].first + points[n - 1].first;
         bool ok = true;
         rep(i, n / 2 + 1) {
             if (points[i].first * 2 == l2) break;
