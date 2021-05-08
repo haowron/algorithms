@@ -36,36 +36,33 @@ int main() {
     int n;
     string s;
     while (cin >> n >> s) {
-        int dp[n][7];
+        int dp[7];
         memset(dp, 0, sizeof(dp));
-        dp[0][0] = (s[0] == 'a');
+        dp[0] = (s[0] == 'a');
         for (int i = 1; i < n; ++i) {
-            rep(j, 7) {
-                dp[i][j] = dp[i - 1][j];
-            }
             if (s[i] == 'a') {
-                ++dp[i][0];
+                ++dp[0];
             } else if (s[i] == 't') {
-                dp[i][1] += dp[i][0];
-                dp[i][1] %= mod;
+                dp[1] += dp[0];
+                dp[1] %= mod;
             } else if (s[i] == 'c') {
-                dp[i][2] += dp[i][1];
-                dp[i][2] %= mod;
+                dp[2] += dp[1];
+                dp[2] %= mod;
             } else if (s[i] == 'o') {
-                dp[i][3] += dp[i][2];
-                dp[i][3] %= mod;
+                dp[3] += dp[2];
+                dp[3] %= mod;
             } else if (s[i] == 'd') {
-                dp[i][4] += dp[i][3];
-                dp[i][4] %= mod;
+                dp[4] += dp[3];
+                dp[4] %= mod;
             } else if (s[i] == 'e') {
-                dp[i][5] += dp[i][4];
-                dp[i][5] %= mod;
+                dp[5] += dp[4];
+                dp[5] %= mod;
             } else if (s[i] == 'r') {
-                dp[i][6] += dp[i][5];
-                dp[i][6] %= mod;
+                dp[6] += dp[5];
+                dp[6] %= mod;
             }
         }
-        cout << dp[n - 1][6] << endl;
+        cout << dp[6] << endl;
     }
     return 0;
 }
