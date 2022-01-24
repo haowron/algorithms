@@ -29,8 +29,8 @@ typedef long long ll;
 
 int main() {
 #ifdef AZUKI_LOCAL
-    freopen("../input.txt", "r", stdin);
-    //freopen("../output.txt", "w", stdout);
+    //freopen("input.txt", "r", stdin);
+    //freopen("output.txt", "w", stdout);
 #endif
 
     return 0;
