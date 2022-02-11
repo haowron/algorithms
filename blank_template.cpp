@@ -1,20 +1,19 @@
-#include <iostream>
-#include <cstring>
 #include <algorithm>
 #include <cmath>
-#include <sstream>
-#include <vector>
-#include <set>
-#include <map>
-#include <stack>
-#include <queue>
 #include <cstdlib>
-#include <unordered_set>
+#include <cstring>
+#include <iostream>
+#include <map>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
 #include <unordered_map>
-
+#include <unordered_set>
+#include <vector>
 
 #define rep(i, n) for (int i = 0; i < n; ++i)
-#define repr(e, i) for (auto e: i)
+#define repr(e, i) for (auto e : i)
 #define all(x) x.begin(), x.end()
 #define pii pair<int, int>
 
@@ -26,11 +25,10 @@ const int dirx[] = {1, 0, -1, 0};
 const int diry[] = {0, 1, 0, -1};
 typedef long long ll;
 
-
 int main() {
 #ifdef AZUKI_LOCAL
-    //freopen("input.txt", "r", stdin);
-    //freopen("output.txt", "w", stdout);
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
 #endif
 
     return 0;
