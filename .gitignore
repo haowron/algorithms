@@ -2,3 +2,4 @@ input.txt
 output.txt
 .idea/**
 CMakeLists.txt
+main.cpp
