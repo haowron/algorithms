@@ -1,6 +1,4 @@
-
-.vscode/**
-a.cpp
-a.exe
 input.txt
 output.txt
+.idea/**
+CMakeLists.txt
