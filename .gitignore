@@ -3,3 +3,4 @@ output.txt
 .idea/**
 CMakeLists.txt
 main.cpp
+main.exe
