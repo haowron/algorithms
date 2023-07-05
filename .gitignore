@@ -1,6 +1,7 @@
 input.txt
 output.txt
 .idea/**
+.vscode
 CMakeLists.txt
 main.cpp
 main.exe
