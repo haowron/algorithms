@@ -6,3 +6,4 @@ CMakeLists.txt
 main.cpp
 main.exe
 main
+main.dSYM
